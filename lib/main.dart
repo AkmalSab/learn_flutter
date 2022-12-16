@@ -15,10 +15,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber[400],
       ),
-      body: Center(
-        child: Image.asset('assets/1.jpg'),
-          // image: NetworkImage('https://images.unsplash.com/photo-1664574654700-75f1c1fad74e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
-          // image: AssetImage('assets/3.jpg'),
+      body: Center (
+        child: IconButton(
+          onPressed: () { print('you clicked me !');},
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber,
+        ),
+        // Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.lightBlue,
+        //   size: 50.0,
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
